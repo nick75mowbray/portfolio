@@ -1,13 +1,22 @@
-nav li .active {
+/* color variables */
+:root {
+    --color-b: #333333;
+    --color-w: #ffffff;
+    --color-blue: #e1f4f3;
+    --color-grey: #706c61;
+}
+/* nav-bar */
+.nav-item {
+    margin: 0 3vw;
+}
+.nav-item.active li a {
+    text-decoration: underline !important;
     font-weight: bold;
 }
-nav {
-    float: right;
+.bg-dark {
+    background-color: var(--color-b) !important;
+    color: var(--color-w) !important;
 }
-.thing {
-    background-color: blue;
-    height: 30px;
-}
-.gutter {
-    margin: 20px;
+.navbar-dark {
+    color: var(--color-w) !important;
 }

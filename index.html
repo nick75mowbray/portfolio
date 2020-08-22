@@ -2,35 +2,60 @@
 <html lang="en">
     <head>
         <title>Nicholas Mowbray</title>
-        <Meta charset="UTF-8"/>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
         <link rel="stylesheet" type="text/css" href="style.css"/>
+        <!-- font awesome script -->
+                <script src="https://kit.fontawesome.com/46281f12c5.js" crossorigin="anonymous"></script>
     </head>
     <body>
-        <nav>
-            <ul class="nav">
-                <li class="nav-item">
-                <a class="nav-link active" href="#">Home</a>
-                </li>
-                <li class="nav-item">
-                <a class="nav-link" href="#">Portfolio</a>
-                </li>
-                <li class="nav-item">
-                <a class="nav-link" href="#">Contact</a>
-                </li>
-            </ul>
+        <!-- nav bar -->
+        <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="index.html">Navbar</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="nav navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="portfolio.html">Portfolio </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact </a>
+                    </li>
+                </ul>
+            </div>
         </nav>
-<br>
-        <div class="container">
-            <div class="row">
-                <div class="col thing gutter"></div>
-                <div class="col thing gutter"></div>
-                <div class="col thing gutter"></div>
+        
+        <!-- hero image -->
+        <div class="jumbotron jumbotron-fluid">
+            <div class="container">
+                <h1 class="display-4">Fluid jumbotron</h1>
+                <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
             </div>
         </div>
-
+        
+        <!-- list of icons -->
+        <div class="container">
+            <div class="row">
+                <div class="col-1">
+                    <i class="fab fa-html5"></i>
+                </div>
+            </div>
+        </div>
+        
+        
+        
+        
+        
+        
+<!-- bootstrap script -->
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>    
     </body>
-</html>
+    </html>
