@@ -9,9 +9,9 @@
 .nav-item {
     margin: 0 3vw;
 }
-.nav-item.active li a {
-    text-decoration: underline !important;
+li.nav-item.active {
     font-weight: bold;
+    border-bottom: 2px solid #ffffff;
 }
 .bg-dark {
     background-color: var(--color-b) !important;
@@ -27,4 +27,12 @@ i.fab {
 .icon-label {
     color: var(--color-grey);
     font-size: 0.8em;
+}
+/* footer */
+#footer {
+    background-color: var(--color-b);
+    padding: 20px 0;
+}
+#footer i.fab {
+    color: var(--color-w);
 }
