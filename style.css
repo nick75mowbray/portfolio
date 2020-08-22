@@ -20,3 +20,11 @@
 .navbar-dark {
     color: var(--color-w) !important;
 }
+/* icons */
+i.fab {
+    color: var(--color-grey);
+}
+.icon-label {
+    color: var(--color-grey);
+    font-size: 0.8em;
+}
