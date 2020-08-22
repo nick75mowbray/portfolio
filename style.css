@@ -7,7 +7,7 @@
 }
 /* nav-bar */
 .nav-item {
-    margin: 0 3vw;
+    margin: 0 2vw;
 }
 li.nav-item.active {
     font-weight: bold;
@@ -27,6 +27,11 @@ i.fab {
 .icon-label {
     color: var(--color-grey);
     font-size: 0.8em;
+}
+/* cards */
+.card {
+    border: none;
+    box-shadow: 2px 2px 10px lightgrey;
 }
 /* footer */
 #footer {
