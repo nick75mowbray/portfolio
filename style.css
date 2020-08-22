@@ -4,3 +4,10 @@ nav li .active {
 nav {
     float: right;
 }
+.thing {
+    background-color: blue;
+    height: 30px;
+}
+.gutter {
+    margin: 20px;
+}
