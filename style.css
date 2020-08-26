@@ -1,0 +1,196 @@
+/* color variables */
+:root {
+    --color-b: #333333;
+    --color-w: #ffffff;
+    --color-blue: #14bcff;
+    --color-grey: #262626;
+    --color-light: #969696;
+    --color-vlight: #bebebe;
+    font-family: 'Open Sans', sans-serif;
+}
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+h1, h2, h3, h4 {
+    font-family: 'Oswald', sans-serif;
+}
+/* nav-bar */
+.navbar-brand {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    font-size: 1.5em;
+    margin-left: 10px;
+}
+.navbar-brand em {
+    font-weight: 200;
+    font-style: normal;
+}
+.nav-item {
+    margin: 0 2vw;
+}
+li.nav-item.active {
+    border-bottom: 2px solid #ffffff;
+}
+.bg-dark {
+    background-color: #111111 !important;
+    color: var(--color-w) !important;
+}
+.navbar-dark {
+    color: var(--color-w) !important;
+}
+/* jumbotron */
+.inner-shadow {
+    -moz-box-shadow:    inset 0px 11px 8px -10px #CCC,
+                        inset 0px -11px 8px -10px #CCC; 
+    -webkit-box-shadow: inset 0px 11px 8px -10px #CCC,
+                        inset 0px -11px 8px -10px #CCC; 
+    box-shadow:         inset 0px 11px 8px -10px #CCC,
+                        inset 0px -11px 8px -10px #CCC; 
+    border-radius: 0;
+ }
+ .lead {
+    font-family: 'Oswald', sans-serif;
+    font-size: 2rem;
+ }
+ #getInTouch {
+     font-size: 1em;
+     font-weight: bold;
+     border: 1.5px solid var(--color-blue);
+     background-color: transparent;
+     color: var(--color-blue);
+ }
+ #getInTouch:hover {
+    background-color: var(--color-blue);
+    color: #ffffff;
+ }
+/* hero image */
+/* #hero-image {
+    height: 70vh;
+    background-color: #000000;
+}
+.hero-text {
+    color: #ffffff;
+    opacity: 1.0;
+}
+#hero-left {
+    background-image: url("assets/images/hero-left.jpg");
+    background-size: cover;
+    height: 70vh;
+    opacity: 0.5;
+    overflow: hidden;
+    background-position: right;
+}
+#hero-left:hover, #hero-right:hover {
+    opacity: 1.0;
+}
+#hero-right {
+    background-image: url("assets/images/hero-right.jpg");
+    background-size: cover;
+    height: 70vh;
+    opacity: 0.5;
+    overflow: hidden;
+    background-position: left;
+}
+#hero-text-left {
+    position: relative;
+    top: -45vh;
+}
+h1.hero-text {
+    font-size: 4em;
+    font-weight: 400;
+}
+h3.hero-text {
+    letter-spacing: 0.75em;
+    margin-top: 3.5vh;
+} */
+/* icons */
+#icon-list {
+    margin-top: 20px;
+}
+i.fab {
+    color: var(--color-light);
+}
+.icon-label {
+    color: var(--color-light);
+    font-size: 0.8em;
+}
+/* cards */
+.card {
+    border: none;
+    box-shadow: 2px 2px 10px lightgrey;
+    width: 100%;
+    border-radius: 0;
+}
+.project-image img {
+    transition: all 0.3s;
+    border-radius: 0;
+}
+.project-image img:hover {
+    transform: scale(1.6);
+}
+.project-image {
+    overflow: hidden;
+    padding: 0;
+}
+.project-column {
+    padding: 0;
+}
+/* footer */
+#footer {
+    background-color: var(--color-grey);
+    padding: 20px 0;
+    margin-top: 30px;
+}
+#footer i.fab {
+    color: var(--color-w);
+}
+#footer i.fab:hover {
+    color: var(--color-light);
+}
+/* contact page */
+.myhr {
+    padding: 0;
+    border: 0.8px solid var(--color-vlight);
+}
+.contact-icons .myhr {
+    max-width: 70px;
+}
+.contact-info {
+    font-size: 0.9em;
+}
+.list-unstyled li {
+    font-size: 0.9em;
+}
+.contact-icons i {
+    color: var(--color-blue);
+}
+.contact-icons .text-center:hover {
+    color: var(--color-blue);
+}
+.contact-icons a {
+    color: #000000;
+    text-decoration: none;
+}
+.contact-icons a:hover {
+    color: var(--color-blue);
+}
+@media screen and (max-width: 768px){
+    h1.hero-text {
+        font-size: 3em;
+    }
+    h3.hero-text {
+        font-size: 1.25em;
+    }
+   .icon-label {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 576px){
+    h1.hero-text {
+        font-size: 2em;
+    }
+    h3.hero-text {
+        font-size: 0.9em;
+    }
+}

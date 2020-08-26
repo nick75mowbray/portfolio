@@ -2,10 +2,210 @@
 <html lang="en">
     <head>
         <title>Nicholas Mowbray</title>
-        <Meta charset="UTF-8"/>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Oswald:wght@200;300;400;600&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
         <link rel="stylesheet" type="text/css" href="style.css"/>
+        <!-- font awesome script -->
+                <script src="https://kit.fontawesome.com/46281f12c5.js" crossorigin="anonymous"></script>
     </head>
     <body>
+        <!-- nav bar -->
+        <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="index.html">Nick.<em>Mowbray</em></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="container">
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="portfolio.html">Portfolio </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- jummbotron -->
+        <div class="jumbotron inner-shadow">
+            <div class="">
+                <div class="container">
+                    <p id="job-description">Designer & Web Developer</p>
+                    <p class="lead">Hi there, I'm <strong>Nick</strong>.<br>I'm a multidisciplinary designer and developer dreaming up and building some cool stuff.</p>
+                    <hr class="my-4">
+                    <p>Have a project in mind? I would love to work with you.</p>
+                    <a class="btn btn-primary btn-lg" id="getInTouch" href="contact.html" role="button">Get in touch</a>
+                </div>
+            </div>
+          </div>
 
+           
+        <!-- hero image -->
+        <!-- <div id="hero-image" class="">
+                <div class="container-fluid" id="hero-background">
+                    <div class="row justify-content-center ">
+                        <div class="col-6  d-flex align-items-center justify-content-end" id="hero-left">
+                        </div>
+                        <div class="col-6" id="hero-right">
+                        </div>
+                    </div> 
+                    <div class="row justify-content-center" id="hero-text-left">
+                        <div class="col-6  d-flex align-items-center justify-content-end">
+                            <div class="text-right">
+                            <h1 class="hero-text">NICHOLAS</h1>
+                            <h3 class="hero-text">DESIGNER</h3>
+                            </div>
+                        </div>
+                        <div class="col-6 d-flex align-items-center justify-content-start" id="hero-text-right">
+                            <div>
+                            <h1 class="hero-text">MOWBRAY</h1>
+                            <h3 class="hero-text">DEVELOPER</h3>
+                        </div>
+                        </div>
+                    </div> 
+                </div>
+        </div> -->
+        
+        <!-- list of icons -->
+        <div class="container" id="icon-list">
+            <div class="row justify-content-around">
+                <div class="col-1 text-center">
+                    <figure>
+                        <i class="fab fa-html5 fa-2x"></i>
+                        <figcaption class="icon-label">HTML5</figcaption>
+                    </figure>
+                </div>
+                <div class="col-1 text-center">
+                    <figure>
+                        <i class="fab fa-css3-alt fa-2x"></i>
+                        <figcaption class="icon-label">CSS3</figcaption>
+                    </figure>
+                </div>
+                <div class="col-1 text-center">
+                    <figure>
+                        <i class="fab fa-js fa-2x"></i>
+                        <figcaption class="icon-label">JavaScript</figcaption>
+                    </figure>
+                </div>
+                <div class="col-1 text-center">
+                    <figure>
+                        <i class="fab fa-bootstrap fa-2x"></i>
+                        <figcaption class="icon-label">Bootstrap</figcaption>
+                    </figure>
+                </div>
+                <div class="col-1 text-center">
+                    <figure>
+                        <i class="fab fa-node-js fa-2x"></i>
+                        <figcaption class="icon-label">NodeJS</figcaption>
+                    </figure>
+                </div>
+                <div class="col-1 text-center">
+                    <figure>
+                        <i class="fab fa-react fa-2x"></i>
+                        <figcaption class="icon-label">React</figcaption>
+                    </figure>
+                </div>
+                <div class="col-1 text-center">
+                    <figure>
+                        <i class="fab fa-adobe fa-2x"></i>
+                        <figcaption class="icon-label">Adobe CC</figcaption>
+                    </figure>
+                </div>
+                <div class="col-1 text-center">
+                    <figure>
+                        <i class="fab fa-git fa-2x"></i>
+                        <figcaption class="icon-label">Git</figcaption>
+                    </figure>
+                </div>
+            </div>
+        </div>
+
+        <!-- portfolio cards -->
+        <div class="container">
+            <div class="row" style="margin: 20px 0 5px 0;">
+                <div class="col-lg-6 col-sm-12 project-image">
+                        <img src="assets/images/Project_2/project2_mowbray_1.png" class="card-img-top img-fluid" alt="...">
+                </div>
+                <div class="col-lg-6 col-sm-12 project-image">
+                        <img src="assets/images/cactus.jpg" class="card-img-top img-fluid" alt="...">
+                </div>
+                <div class="col-lg-6 col-sm-12 project-image">
+                    <img src="assets/images/Project_1/project1_mowbray_2.png" class="card-img-top img-fluid" alt="...">
+                </div>
+                <div class="col-lg-6 col-sm-12 project-image">
+                    <img src="assets/images/Project 3/project3_mowbray_2.png" class="card-img-top img-fluid" alt="...">
+                </div>
+            </div>
+        </div>
+        <!-- more projects button -->
+        <div class="d-flex justify-content-center">
+        <button type="button" style="margin-bottom: 5px;" onclick="window.location.href='portfolio.html';" class="btn btn-secondary">View More Projects</button>
+        </div>
+        <br>
+        <div class="container">
+            <div class="row contact-icons">
+                <div class="col-sm-12 text-center col-md-4">
+                    <i class="fas fa-phone fa-2x"></i>
+                    <hr class="myhr">
+                    <p class="contact-info">Ph. 0000 000 000</p>
+                </div>
+                <div class="col-sm-12 text-center col-md-4" >
+                    <a href="mailto:nickmdeveloper@gmail.com">
+                    <i class="fas fa-envelope fa-2x"></i>
+                    <hr class="myhr">
+                    <p class="contact-info">nickmdeveloper@gmail.com</p>
+                </a>
+                </div>
+                <div class="col-sm-12 text-center col-md-4">
+                    <a href="https://www.linkedin.com/in/nicholas-mowbray-developer">
+                    <i class="fas fa-comment fa-2x"></i>
+                    <hr class="myhr">
+                    <p class="contact-info">LinkedIn</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <!-- footer -->
+        <div id="footer" class="fixed-bottom container-fluid">
+            <div class="row justify-content-center">
+                <div class="col-1 text-center">
+                    <a href="https://www.instagram.com/nick.mowbray/">
+                    <i class="fab fa-instagram fa-lg" title="Instagram"></i>
+                    </a>
+                </div>
+                <div class="col-1 text-center">
+                    <a href="https://github.com/nick75mowbray">
+                    <i class="fab fa-github fa-lg" title="GitHub"></i>
+                    </a>
+                </div>
+                <div class="col-1 text-center">
+                    <a href="https://www.behance.net/">
+                    <i class="fab fa-behance fa-lg" title="Behance"></i>
+                    </a>
+                </div>
+                <div class="col-1 text-center">
+                    <a href="https://www.linkedin.com/in/nicholas-mowbray-developer">
+                    <i class="fab fa-linkedin fa-lg" title="LinkedIn"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        
+        
+<!-- bootstrap script -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>    
     </body>
-</html>
+    </html>

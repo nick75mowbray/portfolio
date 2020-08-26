@@ -2,10 +2,139 @@
 <html lang="en">
     <head>
         <title>Contact</title>
-        <link rel="stylesheet" type="text/css" href="style.css"/>
         <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Oswald:wght@200;300;400;600&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="style.css"/>
+                <!-- font awesome script -->
+                <script src="https://kit.fontawesome.com/46281f12c5.js" crossorigin="anonymous"></script>
     </head>
     <body>
-        
+        <!-- nav bar -->
+        <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="index.html">Nick.<em>Mowbray</em></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="container">
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="portfolio.html">Portfolio </a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="contact.html">Contact <span class="sr-only">(current)</span></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- contact container -->
+        <div class="container" style="margin-top: 30px;">
+            <div class="row">
+                <div class="col-12 col-lg-5 order-2 order-md-2 order-sm-2 order-lg-1">
+                    <div class="row">
+                        <div class="col-12 col-md-6 col-lg-12">
+                            <img src="assets/images/profile-pic.jpg" class="img-fluid" alt="Nick Mowbray"/>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-12">
+                            <div class="row">
+                                <div class="col-12 col-lg-6">
+                                    <br>
+                                    <p><strong>Design</strong></p>
+                                    <hr class="myhr">
+                                    <ul class="list-unstyled">
+                                        <li>Branding</li>
+                                        <li>Illustration</li>
+                                        <li>Photography</li>
+                                        <li>UI/UX</li>
+                                    </ul>
+                                </div>
+                        
+                                <div class="col-12 col-lg-6">
+                                    <br>
+                                    <p><strong>Development</strong></p>
+                                    <hr class="myhr">
+                                    <ul class="list-unstyled">
+                                        <li>HTML</li>
+                                        <li>CSS</li>
+                                        <li>JavaScript</li>
+                                        <li>React</li>
+                                        <li>JQuery</li>
+                                        <li>NodeJS</li>
+                                        <li>mySQL</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-7 order-1 order-md-1 order-sm-1 order-lg-2">
+                    <div class="container">
+                        <p id="job-description">Designer & Web Developer</p>
+                        <p class="lead">Hi there, I'm <strong>Nick</strong>.<br>I'm a multidisciplinary designer and developer dreaming up and building some cool stuff.</p>
+                        <hr class="my-4">
+                        <p>Have a project in mind? I would love to work with you.</p>
+                        <br>
+                        <div class="row contact-icons">
+                            <div class="col-sm-12 text-center col-md-4">
+                                <i class="fas fa-phone fa-2x"></i>
+                                <hr class="myhr">
+                                <p class="contact-info">Ph. 0000 000 000</p>
+                            </div>
+                            <div class="col-sm-12 text-center col-md-4" >
+                                <a href="mailto:nickmdeveloper@gmail.com">
+                                <i class="fas fa-envelope fa-2x"></i>
+                                <hr class="myhr">
+                                <p class="contact-info">nickmdeveloper@gmail.com</p>
+                            </a>
+                            </div>
+                            <div class="col-sm-12 text-center col-md-4">
+                                <a href="https://www.linkedin.com/in/nicholas-mowbray-developer">
+                                <i class="fas fa-comment fa-2x"></i>
+                                <hr class="myhr">
+                                <p class="contact-info">LinkedIn</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <!-- footer -->
+        <div id="footer" class="fixed-bottom container-fluid">
+            <div class="row justify-content-center">
+                <div class="col-1 text-center">
+                    <a href="https://www.instagram.com/nick.mowbray/">
+                    <i class="fab fa-instagram fa-lg" title="Instagram"></i>
+                    </a>
+                </div>
+                <div class="col-1 text-center">
+                    <a href="https://github.com/nick75mowbray">
+                    <i class="fab fa-github fa-lg" title="GitHub"></i>
+                    </a>
+                </div>
+                <div class="col-1 text-center">
+                    <a href="https://www.behance.net/">
+                    <i class="fab fa-behance fa-lg" title="Behance"></i>
+                    </a>
+                </div>
+                <div class="col-1 text-center">
+                    <a href="https://www.linkedin.com/in/nicholas-mowbray-developer">
+                    <i class="fab fa-linkedin fa-lg" title="LinkedIn"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
     </body>
 </html>
