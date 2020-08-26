@@ -5,6 +5,7 @@
     --color-blue: #14bcff;
     --color-grey: #262626;
     --color-light: #969696;
+    --color-vlight: #bebebe;
     font-family: 'Open Sans', sans-serif;
 }
 body {
@@ -131,15 +132,48 @@ i.fab {
     overflow: hidden;
     padding: 0;
 }
+.project-column {
+    padding: 0;
+}
 /* footer */
 #footer {
     background-color: var(--color-grey);
     padding: 20px 0;
+    margin-top: 30px;
 }
 #footer i.fab {
     color: var(--color-w);
 }
-
+#footer i.fab:hover {
+    color: var(--color-light);
+}
+/* contact page */
+.myhr {
+    padding: 0;
+    border: 0.8px solid var(--color-vlight);
+}
+.contact-icons .myhr {
+    max-width: 70px;
+}
+.contact-info {
+    font-size: 0.9em;
+}
+.list-unstyled li {
+    font-size: 0.9em;
+}
+.contact-icons i {
+    color: var(--color-blue);
+}
+.contact-icons .text-center:hover {
+    color: var(--color-blue);
+}
+.contact-icons a {
+    color: #000000;
+    text-decoration: none;
+}
+.contact-icons a:hover {
+    color: var(--color-blue);
+}
 @media screen and (max-width: 768px){
     h1.hero-text {
         font-size: 3em;
