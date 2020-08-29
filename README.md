@@ -15,7 +15,7 @@
 
  ## index/ home:
  ![screenshot of home page top](/screenshots/desktop-index-top.jpg)
- ![screenshot of home page middle](/screenshots/desktop-mid.jpg)
+ ![screenshot of home page middle](/screenshots/desktop-index-mid.jpg)
  ![screenshot of home page (mobile)](/screenshots/mobile-index.jpg)
  ### jumbotron:
 created full width jumbotron with a branding statement and link to contact page.\
@@ -39,3 +39,5 @@ created a dynamic layout using rows and columns that changes from two columns on
 Using nested rows and columns created a layout that resizes and changes the order of the columns and rows depending on screen size.
 ![screenshot of contact page (desktop)](/screenshots/desktop-contact.jpg)
 ![screenshot of contact page (mobile)](/screenshots/mobile-contact.jpg)
+
+[link to deployed site:](https://nick75mowbray.github.io/homework_wk2_bootstrap/)
