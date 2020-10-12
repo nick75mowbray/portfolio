@@ -1,5 +1,4 @@
-# home_wk2_bootstrap
- task: create a responsive portfolio using bootstrap.
+# Personal Portfolio
 
  ## navbar:
  created fixed position, full width navbar with menu links that change to a burger menu on small screens.\
@@ -40,4 +39,4 @@ Using nested rows and columns created a layout that resizes and changes the orde
 ![screenshot of contact page (desktop)](/screenshots/desktop-contact.jpg)
 ![screenshot of contact page (mobile)](/screenshots/mobile-contact.jpg)
 
-[link to deployed site:](https://nick75mowbray.github.io/homework_wk2_bootstrap/)
+[link to deployed site:](https://nick75mowbray.github.io/portfolio/)
