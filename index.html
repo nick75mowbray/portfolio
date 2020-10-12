@@ -4,15 +4,16 @@
         <title>Nicholas Mowbray</title>
         <meta charset="UTF-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Oswald:wght@200;300;400;600&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;400;500&family=IBM+Plex+Sans:wght@300;400;500&family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
         <link rel="stylesheet" type="text/css" href="style.css"/>
         <!-- font awesome script -->
                 <script src="https://kit.fontawesome.com/46281f12c5.js" crossorigin="anonymous"></script>
+                <script src="https://code.jquery.com/jquery-3.5.1.slim.js" integrity="sha256-DrT5NfxfbHvMHux31Lkhxg42LY6of8TaYyK50jnxRnM=" crossorigin="anonymous"></script>
     </head>
     <body>
-        <!-- nav bar -->
-        <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
+         <!-- nav bar -->
+         <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
             <a class="navbar-brand" href="index.html">Nick.<em>Mowbray</em></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -38,7 +39,7 @@
             <div class="">
                 <div class="container">
                     <p id="job-description">Designer & Web Developer</p>
-                    <p class="lead">Hi there, I'm <strong>Nick</strong>.<br>I'm a multidisciplinary designer and developer dreaming up and building some cool stuff.</p>
+                    <p class="lead">Hi there, I'm <strong>Nick</strong>.<br></p><p class="headline">I am a multidisciplinary designer and fullstack web developer living in Adelaide. I have a passion for turning complex problems into elegantly simple solutions.</p>
                     <hr class="my-4">
                     <p>Have a project in mind? I would love to work with you.</p>
                     <a class="btn btn-primary btn-lg" id="getInTouch" href="contact.html" role="button">Get in touch</a>
@@ -46,33 +47,6 @@
             </div>
           </div>
 
-           
-        <!-- hero image (commented out just in case I decide to use it later)-->
-        <!-- <div id="hero-image" class="">
-                <div class="container-fluid" id="hero-background">
-                    <div class="row justify-content-center ">
-                        <div class="col-6  d-flex align-items-center justify-content-end" id="hero-left">
-                        </div>
-                        <div class="col-6" id="hero-right">
-                        </div>
-                    </div> 
-                    <div class="row justify-content-center" id="hero-text-left">
-                        <div class="col-6  d-flex align-items-center justify-content-end">
-                            <div class="text-right">
-                            <h1 class="hero-text">NICHOLAS</h1>
-                            <h3 class="hero-text">DESIGNER</h3>
-                            </div>
-                        </div>
-                        <div class="col-6 d-flex align-items-center justify-content-start" id="hero-text-right">
-                            <div>
-                            <h1 class="hero-text">MOWBRAY</h1>
-                            <h3 class="hero-text">DEVELOPER</h3>
-                        </div>
-                        </div>
-                    </div> 
-                </div>
-        </div> -->
-        
         <!-- list of icons -->
         <div class="container" id="icon-list">
             <div class="row justify-content-around">
@@ -114,8 +88,8 @@
                 </div>
                 <div class="col-1 text-center">
                     <figure>
-                        <i class="fab fa-adobe fa-2x"></i>
-                        <figcaption class="icon-label">Adobe CC</figcaption>
+                        <i class="fab fa-vuejs fa-2x"></i>
+                        <figcaption class="icon-label">Vue</figcaption>
                     </figure>
                 </div>
                 <div class="col-1 text-center">
@@ -130,44 +104,84 @@
         <!-- portfolio cards -->
         <div class="container">
             <div class="row" style="margin: 20px 0 5px 0;">
-                <div class="col-lg-6 col-sm-12 project-image">
-                        <img src="assets/images/Project_2/project2_mowbray_1.png" class="card-img-top img-fluid" alt="...">
+                <div class="col-lg-4 col-sm-12 card-container">
+                    <div class="project-image">
+                    <div class="img-container">
+                        <img src="assets/images/timer-started.jpg" class="card-img-top img-fluid" alt="Fasting Tracker">
+                    </div>
+                        <div class="card-body">
+                            <div>
+                            <h5 class="card-title">Fasting Tracker</h5>
+                            <p class="card-text">As part of a collaboration I built an intermittent fasting tracker designed to help users to keep track of when to eat and when to fast. It also contains useful information and calculators including a BMI and calorie calculator as well as links to useful articles.</p>
+                            </div>
+                            <div>
+                            <a href="https://nick75mowbray.github.io/project1/" class="btn btn-primary site-link" target="_blank">Visit Site</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-lg-6 col-sm-12 project-image">
-                        <img src="assets/images/cactus.jpg" class="card-img-top img-fluid" alt="...">
+                <div class="col-lg-4 col-sm-12 card-container">
+                    <div class="project-image">
+                    <div class="img-container">
+                        <img src="assets/images/weather_dashboard.jpg" class="card-img-top img-fluid" alt="Weather Dashboard">
+                    </div>
+                        <div class="card-body">
+                            <div>
+                                <h5 class="card-title">Weather Dashboard</h5>
+                                <p class="card-text">A weather dashboard that uses openweather api to retrieve weather data. It features custom illustrations that change depending on the current weather conditions and uses local storage to save the users previous city searches.</p>
+                            </div>
+                            <div>
+                                <a href="https://nick75mowbray.github.io/weather_dashboard/" class="btn btn-primary site-link" target="_blank">Visit Site</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-lg-6 col-sm-12 project-image">
-                    <img src="assets/images/Project_1/project1_mowbray_2.png" class="card-img-top img-fluid" alt="...">
+                <div class="col-lg-4 col-sm-12 card-container">
+                    <div class="project-image">
+                    <div class="img-container">
+                        <img src="assets/images/day_planner (2).jpg" class="card-img-top img-fluid" alt="Day Planner">
+                    </div>
+                    <div class="card-body">
+                        <div>
+                        <h5 class="card-title">Day Planner</h5>
+                        <p class="card-text">I created a day planner site that uses moment.js to retrieve the current time and local storage to store the users events for the day.</p>
+                        </div>
+                        <div>
+                        <a href="https://nick75mowbray.github.io/day_planner/" class="btn btn-primary site-link" target="_blank">Visit Site</a>
+                    </div>
+                    </div>
                 </div>
-                <div class="col-lg-6 col-sm-12 project-image">
-                    <img src="assets/images/Project 3/project3_mowbray_2.png" class="card-img-top img-fluid" alt="...">
                 </div>
             </div>
         </div>
-        <!-- more projects button -->
-        <div class="d-flex justify-content-center">
-        <button type="button" style="margin-bottom: 5px;" onclick="window.location.href='portfolio.html';" class="btn btn-secondary">View More Projects</button>
-        </div>
+        
         <br>
         <div class="container">
             <div class="row contact-icons">
-                <div class="col-sm-12 text-center col-md-4">
+                <div class="col-sm-6 text-center col-md-3">
                     <i class="fas fa-phone fa-2x"></i>
                     <hr class="myhr">
-                    <p class="contact-info">Ph. 0000 000 000</p>
+                    <p class="contact-info">Ph. 0416 211 362</p>
                 </div>
-                <div class="col-sm-12 text-center col-md-4" >
-                    <a href="mailto:nickmdeveloper@gmail.com">
+                <div class="col-sm-6 text-center col-md-3" >
+                    <a href="mailto:nickmdeveloper@gmail.com" target="_blank">
                     <i class="fas fa-envelope fa-2x"></i>
                     <hr class="myhr">
                     <p class="contact-info">nickmdeveloper@gmail.com</p>
                 </a>
                 </div>
-                <div class="col-sm-12 text-center col-md-4">
-                    <a href="https://www.linkedin.com/in/nicholas-mowbray-developer">
-                    <i class="fas fa-comment fa-2x"></i>
+                <div class="col-sm-6 text-center col-md-3">
+                    <a href="https://www.linkedin.com/in/nicholas-mowbray-developer" target="_blank">
+                    <i class="fab fa-linkedin fa-2x"></i>
                     <hr class="myhr">
                     <p class="contact-info">LinkedIn</p>
+                    </a>
+                </div>
+                <div class="col-sm-6 text-center col-md-3">
+                    <a href="https://github.com/nick75mowbray" target="_blank">
+                    <i class="fab fa-github fa-2x"></i>
+                    <hr class="myhr">
+                    <p class="contact-info">GitHub</p>
                     </a>
                 </div>
             </div>
@@ -203,7 +217,8 @@
         
         
         
-<!-- bootstrap script -->
+        <script src="javascript.js"></script>
+        <!-- bootstrap script -->
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>    
