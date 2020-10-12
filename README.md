@@ -39,4 +39,4 @@ Using nested rows and columns created a layout that resizes and changes the orde
 ![screenshot of contact page (desktop)](/screenshots/desktop-contact.jpg)
 ![screenshot of contact page (mobile)](/screenshots/mobile-contact.jpg)
 
-[link to deployed site:](https://nick75mowbray.github.io/bootstrap_portfolio/)
+[link to deployed site:](https://nick75mowbray.github.io/portfolio/)
