@@ -1,5 +1,4 @@
-# home_wk2_bootstrap
- task: create a responsive portfolio using bootstrap.
+# Personal Portfolio
 
  ## navbar:
  created fixed position, full width navbar with menu links that change to a burger menu on small screens.\
