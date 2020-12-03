@@ -61,28 +61,48 @@ nav li a {
     background-image: linear-gradient(#FFD194, #D1913C);
     background-attachment: fixed;
     height: 100vh;
-    flex-wrap: wrap-reverse;
+    flex-wrap: nowrap;
+    align-items: center;
 }
 #objects {
-    /* max-width: 650px; */
+    position: relative;
     margin-top: 5vh;
-    width: 300px;
+    right: 30px;
+    width: 1500px;
     transform: scale(0.8);
-}
+    animation: object-fadeIn ease 6s;
+        -webkit-animation: object-fadeIn ease 6s;
+        -moz-animation: object-fadeIn ease 6s;
+        -o-animation: object-fadeIn ease 6s;
+        -ms-animation: object-fadeIn ease 6s;
+        }
+        @keyframes object-fadeIn {
+        0% {opacity:0;}
+        100% {opacity:1;}
+        }
+        @-moz-keyframes object-fadeIn {
+        0% {opacity:0;}
+        100% {opacity:1;}
+        }
+        @-webkit-keyframes object-fadeIn {
+        0% {opacity:0;}
+        100% {opacity:1;}
+        }
+        @-o-keyframes object-fadeIn {
+        0% {opacity:0;}
+        100% {opacity:1;}
+        }
+        @-ms-keyframes object-fadeIn {
+        0% {opacity:0;}
+        100% {opacity:1;}
+        }
+
 .jumbotron-content {
     margin-top: 16vh;
     margin-left: 2vw;
     max-width: 800px;
 }
-/* .inner-shadow {
-    -moz-box-shadow:    inset 0px 11px 8px -10px #CCC,
-                        inset 0px -11px 8px -10px #CCC; 
-    -webkit-box-shadow: inset 0px 11px 8px -10px #CCC,
-                        inset 0px -11px 8px -10px #CCC; 
-    box-shadow:         inset 0px 11px 8px -10px #CCC,
-                        inset 0px -11px 8px -10px #CCC; 
-    border-radius: 0;
- } */
+
  .lead {
     font-family: 'Oswald', sans-serif;
     font-size: 2rem;
@@ -187,10 +207,10 @@ i.fab {
     transform: scale(1.6);
 }
 .project-image {
-    overflow: hidden;
+    overflow-y: scroll;
     padding: 0;
     border-radius: 5px;
-    height: 100%; 
+    height: 100vh; 
     display: flex;
     justify-content: space-between;
 }
@@ -220,6 +240,15 @@ i.fab {
 }
 .card-title {
     font-weight: 600;
+}
+.scroll-snap-container {
+    scroll-snap-type: mandatory;
+    scroll-snap-points-y: repeat(100vh);
+    scroll-snap-type: y mandatory;
+}
+.snap-child {
+    scroll-snap-align: start;
+    position: relative;
 }
 /* footer */
 #footer {
@@ -264,12 +293,6 @@ i.fab {
 .contact-icons div.col-6 {
     margin-bottom: 20px;
 }
-/* hide icon label on smaller screens */
-@media screen and (max-width: 768px){
-   .icon-label {
-        display: none;
-    }
-}
 
 /* resposition 3d object on smaller screens */
 @media screen and (max-width: 1187px){
@@ -280,10 +303,22 @@ i.fab {
         transform: scale(0.7);
         width: 150vw;
     }
+    .jumbotron {
+        flex-wrap: wrap-reverse;
+    }
 }
 
 @media screen and (max-width: 800px){
     #objects {
         transform: scale(0.5);
+    }
+    .icon-label {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 450px){
+    #objects {
+        display: none;
     }
 }
