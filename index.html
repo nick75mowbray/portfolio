@@ -5,6 +5,8 @@
         <meta charset="UTF-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;400;500&family=IBM+Plex+Sans:wght@300;400;500&family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
         <link rel="stylesheet" type="text/css" href="style.css"/>
         <!-- font awesome script -->
@@ -38,24 +40,26 @@
             </div>
         </nav>
         <!-- jummbotron -->
-        <div class="jumbotron">
+        <div class="scroll-snap-container">
+            <section>
+                <div class="jumbotron">
 
-            <div class="jumbotron-content">
-                <div class="">
-                    <p id="job-description" class="fade-in">Designer & Fullstack Web Developer</p>
-                    <p class="lead">Hi there, I'm <strong>Nick</strong>.</p><p class="headline">I am a multidisciplinary designer and fullstack web developer living in Adelaide. I have a passion for turning complex problems into elegantly simple solutions.</p>
-                    <hr class="my-4">
-                    <p class="fade-in">Are you hiring? I would love to work with you.</p>
-                    <a class="btn btn-primary btn-lg fade-in" id="getInTouch" href="contact.html" role="button">Get in touch</a>
+                    <div class="jumbotron-content">
+                        <div class="">
+                            <p id="job-description" class="fade-in">Designer & Fullstack Web Developer</p>
+                            <p class="lead">Hi there, I'm <strong>Nick</strong>.</p><p class="headline">I am a multidisciplinary designer and fullstack web developer living in Adelaide. I have a passion for turning complex problems into elegantly simple solutions.</p>
+                            <hr class="my-4">
+                            <p class="fade-in">Are you hiring? I would love to work with you.</p>
+                            <a class="btn btn-primary btn-lg fade-in" id="getInTouch" href="contact.html" role="button">Get in touch</a>
+                        </div>
+                    </div>
+
+                    <!-- container for 3d objects -->
+                    <div id="objects">
+                        <iframe id="36d7fac5-59c7-421f-9d44-c2683943edcb" src="https://www.vectary.com/viewer/v1/?model=36d7fac5-59c7-421f-9d44-c2683943edcb&env=studio3" frameborder="0" width="100%" height="480"></iframe>
+                    </div>
                 </div>
-            </div>
-
-            <!-- container for 3d objects -->
-            <div id="objects">
-                <iframe id="36d7fac5-59c7-421f-9d44-c2683943edcb" src="https://www.vectary.com/viewer/v1/?model=36d7fac5-59c7-421f-9d44-c2683943edcb&env=studio3" frameborder="0" width="100%" height="480"></iframe>
-            </div>
-        </div>
-
+            </section>
         <!-- list of icons
         <div class="" id="icon-list">
             <div class="icon-list">
@@ -111,10 +115,9 @@
         </div> -->
 
         <!-- portfolio cards -->
-        <div class="container">
-            <div class="scroll-snap-container">
-            
-                    <div class="project-image snap-child">
+            <section>
+                
+                <div class="project-image snap-child">
                     <div class="img-container">
                         <img src="assets/images/timer-started.jpg" class="card-img-top img-fluid" alt="Fasting Tracker">
                     </div>
@@ -125,11 +128,15 @@
                             </div>
                             <div>
                             <a href="https://nick75mowbray.github.io/project1/" class="btn btn-primary site-link" target="_blank">Visit Site</a>
-                            </div>
                         </div>
                     </div>
-        
+                </div>
+
+            </section>
+            <section>
+
                 <div class="project-image snap-child">
+
                     <div class="card-body">
                         <div>
                             <h5 class="card-title">Weather Dashboard</h5>
@@ -140,46 +147,56 @@
                         </div>
                     </div>
 
-                        <div class="img-container">
-                            <img src="assets/images/weather_dashboard.jpg" class="card-img-top img-fluid" alt="Weather Dashboard">
-                        </div>
+                    <div class="img-container">
+                        <img src="assets/images/weather_dashboard.jpg" class="card-img-top img-fluid" alt="Weather Dashboard">
+                    </div>
                         
-                    
                 </div>
-                    <div class="project-image snap-child">
+
+            </section>
+            <section>
+
+                <div class="project-image snap-child">
+
                     <div class="img-container">
                         <img src="assets/images/day_planner (2).jpg" class="card-img-top img-fluid" alt="Day Planner">
                     </div>
+
                     <div class="card-body">
                         <div>
-                        <h5 class="card-title">Day Planner</h5>
-                        <p class="card-text">I created a day planner site that uses moment.js to retrieve the current time and local storage to store the users events for the day.</p>
-                        </div>
-                        <div>
-                        <a href="https://nick75mowbray.github.io/day_planner/" class="btn btn-primary site-link" target="_blank">Visit Site</a>
-                    </div>
-                    </div>
-                </div>
-                    <div class="project-image">
-                    
-                        <div class="card-body">
-                            
-                            <h5 class="card-title">Eat Da Burger</h5>
-                            <p class="card-text">A burger logger created with MySQL, Node, Express, Handlebars and a homemade ORM.</p>
-                            
+                            <h5 class="card-title">Day Planner</h5>
+                            <p class="card-text">I created a day planner site that uses moment.js to retrieve the current time and local storage to store the users events for the day.</p>
+                            </div>
                             <div>
-                                <a href="https://polar-gorge-62998.herokuapp.com/" class="btn btn-primary site-link" target="_blank">Visit Site</a>
-                            </div>
+                            <a href="https://nick75mowbray.github.io/day_planner/" class="btn btn-primary site-link" target="_blank">Visit Site</a>
                         </div>
-                            <div class="img-container">
-                                <img src="assets/images/burger.jpg" class="card-img-top img-fluid" alt="Eat Da Burger">
-                            </div>
-                        
                     </div>
-            </div>
-        </div>
+
+                </div>
+
+            </section>
+            <section>
+
+                <div class="project-image">
+                    
+                    <div class="card-body"> 
+                        <h5 class="card-title">Eat Da Burger</h5>
+                        <p class="card-text">A burger logger created with MySQL, Node, Express, Handlebars and a homemade ORM.</p>   
+                        <div>
+                            <a href="https://polar-gorge-62998.herokuapp.com/" class="btn btn-primary site-link" target="_blank">Visit Site</a>
+                        </div>
+                    </div>
+
+                        <div class="img-container">
+                            <img src="assets/images/burger.jpg" class="card-img-top img-fluid" alt="Eat Da Burger">
+                        </div>
+                        
+                </div>
+
+            </section>
         
-        <br>
+        
+            <section>
         <div class="container">
             <div class="row contact-icons">
                 <div class="col-sm-6 text-center col-md-3">
@@ -211,9 +228,8 @@
                 
             </div>
         </div>
-        <br>
-        <br>
-        <br>
+        </section>
+    </div> <!--end scroll snap container-->
         <!-- footer -->
         <footer id="footer" class="footer fixed-bottom container-fluid">
                 <div class="row justify-content-center">

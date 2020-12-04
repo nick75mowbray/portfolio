@@ -7,33 +7,41 @@
     --color-light: #969696;
     --color-vlight: #bebebe;
     font-family: 'Open Sans', sans-serif;
-    /* fonts: font-family: 'IBM Plex Mono', monospace;
-font-family: 'IBM Plex Sans', sans-serif;
-font-family: 'Poppins', sans-serif; */
 }
 body {
     font-family: 'Open Sans', sans-serif;
 }
 h1, h2, h3, h4 {
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Poppins', sans-serif;;
 }
 /* nav-bar */
+#nav-banner:hover {
+    background-color: #ffffffd2;
+}
 .navbar-brand {
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Poppins', sans-serif;;
     font-weight: 400;
     font-size: 1.5em;
     color: #262626;
 }
 .navbar-brand em {
+    font-family: 'IBM Plex Mono', monospace;
     font-weight: 200;
     font-style: normal;
 }
+.navbar-brand:hover, .navbar-brand:focus {
+    color: #D1913C;
+}
 .nav-item a {
     margin: 0 2vw;
+    text-align: center;
     color: #262626;
 }
 li.nav-item.active {
     border-bottom: 1px solid #262626;
+}
+li.nav-item a:hover {
+    color: #D1913C;
 }
 nav li a {
     color: #262626; 
@@ -64,43 +72,20 @@ nav li a {
     flex-wrap: nowrap;
     align-items: center;
 }
+
 #objects {
     position: relative;
+    z-index:2;
     margin-top: 5vh;
     right: 30px;
     width: 1500px;
     transform: scale(0.8);
-    animation: object-fadeIn ease 6s;
-        -webkit-animation: object-fadeIn ease 6s;
-        -moz-animation: object-fadeIn ease 6s;
-        -o-animation: object-fadeIn ease 6s;
-        -ms-animation: object-fadeIn ease 6s;
-        }
-        @keyframes object-fadeIn {
-        0% {opacity:0;}
-        100% {opacity:1;}
-        }
-        @-moz-keyframes object-fadeIn {
-        0% {opacity:0;}
-        100% {opacity:1;}
-        }
-        @-webkit-keyframes object-fadeIn {
-        0% {opacity:0;}
-        100% {opacity:1;}
-        }
-        @-o-keyframes object-fadeIn {
-        0% {opacity:0;}
-        100% {opacity:1;}
-        }
-        @-ms-keyframes object-fadeIn {
-        0% {opacity:0;}
-        100% {opacity:1;}
-        }
-
+    }
 .jumbotron-content {
     margin-top: 16vh;
     margin-left: 2vw;
     max-width: 800px;
+    z-index:5;
 }
 
  .lead {
@@ -242,14 +227,29 @@ i.fab {
     font-weight: 600;
 }
 .scroll-snap-container {
+    overflow: scroll;
+    height: 100vh;
     scroll-snap-type: mandatory;
     scroll-snap-points-y: repeat(100vh);
-    scroll-snap-type: y mandatory;
+    scroll-snap-type: y mandatory;  
 }
-.snap-child {
-    scroll-snap-align: start;
+section {
+    height: 100vh;
+    scroll-snap-align: center;
     position: relative;
 }
+/* Hide scrollbar for Chrome, Safari and Opera */
+.scroll-snap-container::-webkit-scrollbar, section::-webkit-scrollbar{
+    display: none;
+}
+/* Hide scrollbar for IE, Edge and Firefox */
+.scroll-snap-container, section {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+
+
 /* footer */
 #footer {
     padding: 20px 0;
