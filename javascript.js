@@ -14,12 +14,21 @@ document.onwheel = function(event){
   }
 };
 
-// fade in text on document load
 $( document ).ready(function(){
-
-    $('.fade-in').animate({opacity: '100'}, "slow");
-
+  
+  // fade in text on document load
+  $('.fade-in').animate({opacity: '100'}, "slow");
+  
 });
+
+
+  // show and hide nav on mobile
+  $( document ).on("swipe",function(){
+    alert("swipedown");
+  });
+  $('.jumbotron').on('swipe',function(){
+    alert("swipeup..");
+  });
 
 
 

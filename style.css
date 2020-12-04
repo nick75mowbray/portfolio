@@ -20,7 +20,7 @@ h1, h2, h3, h4 {
 }
 .navbar-brand {
     font-family: 'Poppins', sans-serif;;
-    font-weight: 400;
+    font-weight: 600;
     font-size: 1.5em;
     color: #262626;
 }
@@ -71,6 +71,7 @@ nav li a {
     height: 100vh;
     flex-wrap: nowrap;
     align-items: center;
+    border-radius: 0;
 }
 
 #objects {
@@ -294,10 +295,14 @@ section {
     margin-bottom: 20px;
 }
 
+.set-width {
+    max-width: 1400px;
+    padding: 0 4vw;
+}
+
 /* resposition 3d object on smaller screens */
 @media screen and (max-width: 1187px){
     #objects {
-        
         position: relative;
         top: 250px;
         transform: scale(0.7);
@@ -305,6 +310,9 @@ section {
     }
     .jumbotron {
         flex-wrap: wrap-reverse;
+    }
+    .set-width {
+        padding: 0 2vw;
     }
 }
 
