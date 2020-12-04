@@ -79,11 +79,17 @@ nav li a {
     z-index:2;
     margin-top: 5vh;
     right: 30px;
-    width: 1500px;
+    width: 400px;
+    overflow: hidden;
     transform: scale(0.8);
     }
+iframe {
+    width: 1200px;
+    position: relative;
+    left: -60%;
+}
 .jumbotron-content {
-    margin-top: 16vh;
+    /* margin-top: 16vh; */
     margin-left: 2vw;
     max-width: 800px;
     z-index:5;
@@ -199,6 +205,7 @@ i.fab {
     height: 100vh; 
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 .project-column {
     padding: 0;
@@ -304,7 +311,7 @@ section {
 @media screen and (max-width: 1187px){
     #objects {
         position: relative;
-        top: 250px;
+        top: 150px;
         transform: scale(0.7);
         width: 150vw;
     }
@@ -315,7 +322,17 @@ section {
         padding: 0 2vw;
     }
 }
-
+@media screen and (max-width: 1000px){
+     #nav-banner {
+        background-color: #ffffffd2;
+    }
+    .project-image.reg {
+        flex-direction: column;
+    }
+    .project-image.rev {
+        flex-direction: column-reverse;
+    }
+}
 @media screen and (max-width: 800px){
     #objects {
         transform: scale(0.5);
@@ -325,7 +342,7 @@ section {
     }
 }
 
-@media screen and (max-width: 450px){
+@media screen and (max-width: 600px){
     #objects {
         display: none;
     }
