@@ -224,6 +224,14 @@ i.fab {
     flex-direction: column;
     align-items: flex-start;
 }
+.card-text {
+    margin-bottom: 0.2em;
+}
+.tags {
+    font-style: italic;
+    color: #D1913C;
+    font-size: smaller;
+}
 .site-link {
     margin: 8px 0px;
     background-color: transparent;
