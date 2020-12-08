@@ -29,6 +29,12 @@ $( document ).ready(function(){
   
   // fade in text on document load
   $('.fade-in').animate({opacity: '100'}, "slow");
+
+  // show and hide navbar links
+  $("#nav-button").on("click", function(event){
+    event.preventDefault();
+    $(".nav-content").toggleClass("show-links");
+  })
   
 });
 
