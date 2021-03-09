@@ -1,4 +1,6 @@
 @use 'helpers/colors' as *;
+// button
+@import 'components/button';
 
 #hero {
     width: 100%;
@@ -8,9 +10,10 @@
         background-image: $goldGradient;
         position: absolute;
         width: 40vw;
+        max-width: 300px;
         height: 100vh;
         top: 0px;
-        right: 0px;
+        left: 0px;
         z-index: -5;
     }
     #jumbotron-container {
@@ -19,7 +22,7 @@
         align-items: center;
         .myjumbotron {
         display: flex;
-        flex-wrap: wrap-reverse;
+        flex-wrap: wrap;
         align-items: center;
         justify-content: center;
         width: 100%;
@@ -27,27 +30,33 @@
         #objects {
             z-index: 3;
             margin: 0;
-            min-width: 300px;
-            max-width: 600px;
+            width: 400px;
+            height: 100%;
             overflow: visible;
             display: flex;
             justify-content: center;
             #screens {
-                width: 100vw;
+                width: 600px;
+                max-height: 300px;
             }
         }
         .jumbotron-content {
             width: 100%;
             max-width: 70ch;
+            #job-description {
+                margin-bottom: 30px;
+                font-weight: 500;
+            }
             .lead {
                 font-family: 'Oswald', sans-serif;
-                font-size: 4rem;
+                font-size: 3.5rem;
+                font-weight: 500;
                 color: $black;
                 margin-bottom: 0;
              }
              .headline {
                  margin-top: 0;
-                 margin-bottom: 60px;
+                 margin-bottom: 80px;
                  font-size: 1.2rem;
              }
              strong {
@@ -135,8 +144,7 @@ nav li a {
     justify-content: flex-end;
 }
 
-// button
-@import 'components/button';
+
 
 @media screen and (max-width: 1000px){
     #nav-banner {
