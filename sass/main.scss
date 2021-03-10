@@ -1,40 +1,41 @@
 @use 'helpers/colors' as *;
+@use 'helpers/mixins' as *;
+@use 'helpers/animations' as *;
 // button
 @import 'components/button';
 
 #hero {
+    @include flex-center;
     width: 100%;
     padding: 60px 10px 20px 10px;
     min-height: 100vh;
+    overflow: hidden;
     #background-gradient {
         background-image: $goldGradient;
         position: absolute;
-        width: 40vw;
-        max-width: 300px;
+        width: 30vw;
         height: 100vh;
         top: 0px;
         left: 0px;
         z-index: -5;
     }
     #jumbotron-container {
-        display: flex;
+        @include center-vertical;
         justify-content: space-around;
-        align-items: center;
+        margin: auto 0;
+        max-width: 100%;
         .myjumbotron {
-        display: flex;
+        @include flex-center;
         flex-wrap: wrap;
-        align-items: center;
-        justify-content: center;
         width: 100%;
         max-width: 1200px;
         #objects {
+            @include center-horizontal;
             z-index: 3;
             margin: 0;
             width: 400px;
             height: 100%;
             overflow: visible;
-            display: flex;
-            justify-content: center;
             #screens {
                 width: 600px;
                 max-height: 300px;
@@ -43,6 +44,7 @@
         .jumbotron-content {
             width: 100%;
             max-width: 70ch;
+            margin: 0 2vw;
             #job-description {
                 margin-bottom: 30px;
                 font-weight: 500;
@@ -53,8 +55,10 @@
                 font-weight: 500;
                 color: $black;
                 margin-bottom: 0;
+                line-height: 1.1em;
              }
              .headline {
+                 @include fade-in-animation(3s);
                  margin-top: 0;
                  margin-bottom: 80px;
                  font-size: 1.2rem;
@@ -69,7 +73,6 @@
 }
 
 /* nav-bar */
-
 .navbar-brand {
     font-family: 'Poppins', sans-serif;;
     font-weight: 600;
@@ -144,8 +147,29 @@ nav li a {
     justify-content: flex-end;
 }
 
+// footer
+#footer i.fab {
+    color: $black;
+    padding: 10px 0;
+    &:hover {
+        color: $darkGold;
+    }
+}
 
+// animations
+.fade-in {
+    @include fade-in-animation(8s);
+}
 
+@media screen and (max-width: 1070px){
+    
+    #job-description {
+        text-align: center;
+    }
+    #background-gradient {
+        width: 50vw !important;
+    }
+}
 @media screen and (max-width: 1000px){
     #nav-banner {
        background-color: #ffffffd2;
@@ -161,4 +185,13 @@ nav li a {
    #nav-content {
        display: none;
    }
+}
+@media screen and (max-width: 510px){
+    #getInTouch-container {
+        text-align: center;
+    }
+    .lead {
+        max-width: 8ch;
+        margin-bottom: 8px;
+    }
 }
