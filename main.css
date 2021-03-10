@@ -15,6 +15,15 @@
   border: 2px solid transparent;
 }
 
+body {
+  color: #262626;
+  font-family: "Open Sans", sans-serif;
+}
+
+h1, h2, h3, h4 {
+  font-family: "Poppins", sans-serif;
+}
+
 #hero {
   display: flex;
   align-items: center;
@@ -213,6 +222,42 @@ nav li a {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
+}
+
+/* contact details */
+#contact-container {
+  display: flex;
+  justify-content: space-around;
+  margin: 60px 0;
+}
+#contact-container p strong {
+  font-size: larger;
+}
+#contact-container .myhr {
+  margin: 1.5em 0 0.8em 0;
+  border-bottom: 1px solid #F0A636;
+}
+#contact-container .link-column a {
+  color: #262626;
+  text-decoration: none;
+}
+#contact-container .link-column a .contact-link {
+  display: flex;
+  align-items: center;
+  margin: 16px 0;
+}
+#contact-container .link-column a .contact-link:hover {
+  color: #F0A636;
+  text-decoration: none;
+}
+#contact-container .link-column a .contact-link .contact-info {
+  margin: 0;
+  margin-left: 8px;
+}
+
+.set-width {
+  max-width: 1400px;
+  padding: 0 4vw;
 }
 
 #footer i.fab {

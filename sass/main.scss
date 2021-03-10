@@ -4,6 +4,14 @@
 // button
 @import 'components/button';
 
+body {
+    color: $black;
+    font-family: 'Open Sans', sans-serif;
+}
+h1, h2, h3, h4 {
+    font-family: 'Poppins', sans-serif;;
+}
+
 #hero {
     @include flex-center;
     width: 100%;
@@ -145,6 +153,45 @@ nav li a {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
+}
+
+/* contact details */
+#contact-container {
+    display: flex;
+    justify-content: space-around;
+    margin: 60px 0;
+    p strong {
+            font-size: larger;
+        }
+    .myhr {
+        margin: 1.5em 0 0.8em 0;
+        border-bottom: 1px solid $darkGold;
+    }
+    .link-column {
+        
+        a {
+            color: $black;
+            text-decoration: none;
+            .contact-link {
+                @include center-vertical;
+                margin: 16px 0;
+                &:hover {
+                    color: $darkGold;
+                    text-decoration: none;
+                }
+                .contact-info {
+                    margin: 0;
+                    margin-left: 8px;
+                }
+            }
+        }
+        
+    }
+}
+
+.set-width {
+    max-width: 1400px;
+    padding: 0 4vw;
 }
 
 // footer
