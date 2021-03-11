@@ -62,7 +62,7 @@ h1, h2, h3, h4 {
                 font-size: 3.5rem;
                 font-weight: 500;
                 color: $black;
-                margin-bottom: 0;
+                margin-bottom: 8px;
                 line-height: 1.1em;
              }
              .headline {
@@ -70,6 +70,7 @@ h1, h2, h3, h4 {
                  margin-top: 0;
                  margin-bottom: 80px;
                  font-size: 1.2rem;
+                 line-height: 1.8em;
              }
              strong {
                  font-weight: 700;
@@ -142,6 +143,10 @@ nav li a {
     top: 0px;
     padding-top: 60px;
     display: none;
+    position: fixed;
+    z-index: 4;
+    background-color: #ffffffd2;
+    width: 100%;
 }
 #nav-button {
     display:none;
@@ -156,25 +161,59 @@ nav li a {
 }
 
 /* contact details */
+#details-section {
+    background-color: $lightGold;
+    @include center-horizontal;
+    position: relative;
+    margin-top: 80px;
+    margin-bottom: 40px;
+   
+}
 #contact-container {
+    max-width: 1000px;
+    width: 100%;
+    position: relative;
+    top: -100px;
     display: flex;
     justify-content: space-around;
     margin: 60px 0;
-    p strong {
-            font-size: larger;
-        }
+    text-align: center;
+    flex-wrap: wrap;
     .myhr {
         margin: 1.5em 0 0.8em 0;
         border-bottom: 1px solid $darkGold;
     }
     .link-column {
-        
+        border: 2px solid $darkGold;
+        background-color: #ffffff;
+        border-radius: 6px;
+        flex-grow: 1;
+        min-width: 200px;
+        max-width: 300px;
+        padding: 16px;
+        margin-bottom: 36px;
+        svg {
+            margin: 8px;
+        }
+        p strong {
+            font-size: larger;
+            color: $darkGold;
+            text-align: center;
+            margin: 0;
+        }
+        .list-unstyled {
+            line-height: 2em;
+        }
         a {
             color: $black;
             text-decoration: none;
             .contact-link {
                 @include center-vertical;
+                justify-content: center;
                 margin: 16px 0;
+                i {
+                    color: $darkGold;
+                }
                 &:hover {
                     color: $darkGold;
                     text-decoration: none;

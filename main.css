@@ -84,7 +84,7 @@ h1, h2, h3, h4 {
   font-size: 3.5rem;
   font-weight: 500;
   color: #262626;
-  margin-bottom: 0;
+  margin-bottom: 8px;
   line-height: 1.1em;
 }
 #hero #jumbotron-container .myjumbotron .jumbotron-content .headline {
@@ -96,6 +96,7 @@ h1, h2, h3, h4 {
   margin-top: 0;
   margin-bottom: 80px;
   font-size: 1.2rem;
+  line-height: 1.8em;
 }
 @keyframes fadeIn {
   0% {
@@ -209,6 +210,10 @@ nav li a {
   top: 0px;
   padding-top: 60px;
   display: none;
+  position: fixed;
+  z-index: 4;
+  background-color: #ffffffd2;
+  width: 100%;
 }
 
 #nav-button {
@@ -225,17 +230,51 @@ nav li a {
 }
 
 /* contact details */
+#details-section {
+  background-color: #FFDAA4;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  margin-top: 80px;
+  margin-bottom: 40px;
+}
+
 #contact-container {
+  max-width: 1000px;
+  width: 100%;
+  position: relative;
+  top: -100px;
   display: flex;
   justify-content: space-around;
   margin: 60px 0;
-}
-#contact-container p strong {
-  font-size: larger;
+  text-align: center;
+  flex-wrap: wrap;
 }
 #contact-container .myhr {
   margin: 1.5em 0 0.8em 0;
   border-bottom: 1px solid #F0A636;
+}
+#contact-container .link-column {
+  border: 2px solid #F0A636;
+  background-color: #ffffff;
+  border-radius: 6px;
+  flex-grow: 1;
+  min-width: 200px;
+  max-width: 300px;
+  padding: 16px;
+  margin-bottom: 36px;
+}
+#contact-container .link-column svg {
+  margin: 8px;
+}
+#contact-container .link-column p strong {
+  font-size: larger;
+  color: #F0A636;
+  text-align: center;
+  margin: 0;
+}
+#contact-container .link-column .list-unstyled {
+  line-height: 2em;
 }
 #contact-container .link-column a {
   color: #262626;
@@ -244,7 +283,11 @@ nav li a {
 #contact-container .link-column a .contact-link {
   display: flex;
   align-items: center;
+  justify-content: center;
   margin: 16px 0;
+}
+#contact-container .link-column a .contact-link i {
+  color: #F0A636;
 }
 #contact-container .link-column a .contact-link:hover {
   color: #F0A636;
