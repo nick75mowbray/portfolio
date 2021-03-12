@@ -55,7 +55,7 @@ h1, h2, h3, h4 {
             margin: 0 2vw;
             #job-description {
                 margin-bottom: 30px;
-                font-weight: 500;
+                font-weight: 600;
             }
             .lead {
                 font-family: 'Oswald', sans-serif;
@@ -162,12 +162,10 @@ nav li a {
 
 /* contact details */
 #details-section {
-    background-color: $lightGold;
     @include center-horizontal;
     position: relative;
     margin-top: 80px;
-    margin-bottom: 40px;
-   
+    background-color: $lightGold;
 }
 #contact-container {
     max-width: 1000px;
@@ -176,7 +174,7 @@ nav li a {
     top: -100px;
     display: flex;
     justify-content: space-around;
-    margin: 60px 0;
+    margin-top: 60px;
     text-align: center;
     flex-wrap: wrap;
     .myhr {
@@ -188,7 +186,7 @@ nav li a {
         background-color: #ffffff;
         border-radius: 6px;
         flex-grow: 1;
-        min-width: 200px;
+        min-width: 250px;
         max-width: 300px;
         padding: 16px;
         margin-bottom: 36px;
@@ -228,19 +226,89 @@ nav li a {
     }
 }
 
-.set-width {
-    max-width: 1400px;
-    padding: 0 4vw;
+
+// project cards
+#projects {
+    text-align: center;
+    color: $darkGold;
+    position: relative;
+    top: -25px;
+    font-weight: 600;
+}
+.project-section {
+    @include center-horizontal;
+    margin-bottom: 16px;
+    .project-image {
+        @include center-horizontal;
+        width: 100%;
+        .card-body {
+            max-width: 70ch;
+            .tags {
+                margin-top: 36px;
+            }
+            .site-links-container {
+                display: flex;
+                justify-content: start;
+                align-items: center;
+                flex-wrap: wrap;
+                .site-link {
+                    margin-bottom: 8px;
+                }
+                a {
+                    text-decoration: none;
+                    &:hover {
+                        opacity: 0.3;
+                    }
+                    &:focus {
+                        outline: 1px solid $darkGold;
+                        outline-offset: 2px;
+                    }
+                }
+                .github-link {
+                    @include flex-center;
+                    color: $darkGold;
+                    i {
+                        margin-left: 16px;
+                        margin-right: 8px;
+                    }
+                    .github-info {
+                        margin: 0;
+                    }
+                }
+            }
+        }
+        .img-container {
+            max-width: 600px;
+            min-width: 50%;
+            overflow: hidden;
+            img {
+                transition: all 0.3s;
+                &:hover {
+                    transform: scale(1.6);
+                }
+            }
+        }
+    }
+}
+.rev {
+    flex-wrap: wrap-reverse;
+}
+.reg {
+    flex-wrap: wrap;
 }
 
 // footer
-#footer i.fab {
-    color: $black;
-    padding: 10px 0;
-    &:hover {
-        color: $darkGold;
+#footer {
+    i {
+       &.fab, &.fas {
+        color: $black;
+        padding: 10px 0;
+        &:hover {
+            color: $darkGold;
+        } 
     }
-}
+}}
+
 
 // animations
 .fade-in {
@@ -279,5 +347,11 @@ nav li a {
     .lead {
         max-width: 8ch;
         margin-bottom: 8px;
+    }
+}
+
+@media screen and (min-width: 1300px){
+    .card-body {
+        margin-top: 36px;
     }
 }

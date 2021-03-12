@@ -77,7 +77,7 @@ h1, h2, h3, h4 {
 }
 #hero #jumbotron-container .myjumbotron .jumbotron-content #job-description {
   margin-bottom: 30px;
-  font-weight: 500;
+  font-weight: 600;
 }
 #hero #jumbotron-container .myjumbotron .jumbotron-content .lead {
   font-family: "Oswald", sans-serif;
@@ -231,12 +231,11 @@ nav li a {
 
 /* contact details */
 #details-section {
-  background-color: #FFDAA4;
   display: flex;
   justify-content: center;
   position: relative;
   margin-top: 80px;
-  margin-bottom: 40px;
+  background-color: #FFDAA4;
 }
 
 #contact-container {
@@ -246,7 +245,7 @@ nav li a {
   top: -100px;
   display: flex;
   justify-content: space-around;
-  margin: 60px 0;
+  margin-top: 60px;
   text-align: center;
   flex-wrap: wrap;
 }
@@ -259,7 +258,7 @@ nav li a {
   background-color: #ffffff;
   border-radius: 6px;
   flex-grow: 1;
-  min-width: 200px;
+  min-width: 250px;
   max-width: 300px;
   padding: 16px;
   margin-bottom: 36px;
@@ -298,16 +297,87 @@ nav li a {
   margin-left: 8px;
 }
 
-.set-width {
-  max-width: 1400px;
-  padding: 0 4vw;
+#projects {
+  text-align: center;
+  color: #F0A636;
+  position: relative;
+  top: -25px;
+  font-weight: 600;
 }
 
-#footer i.fab {
+.project-section {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 16px;
+}
+.project-section .project-image {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.project-section .project-image .card-body {
+  max-width: 70ch;
+}
+.project-section .project-image .card-body .tags {
+  margin-top: 36px;
+}
+.project-section .project-image .card-body .site-links-container {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.project-section .project-image .card-body .site-links-container .site-link {
+  margin-bottom: 8px;
+}
+.project-section .project-image .card-body .site-links-container a {
+  text-decoration: none;
+}
+.project-section .project-image .card-body .site-links-container a:hover {
+  opacity: 0.3;
+}
+.project-section .project-image .card-body .site-links-container a:focus {
+  outline: 1px solid #F0A636;
+  outline-offset: 2px;
+}
+.project-section .project-image .card-body .site-links-container .github-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #F0A636;
+}
+.project-section .project-image .card-body .site-links-container .github-link i {
+  margin-left: 16px;
+  margin-right: 8px;
+}
+.project-section .project-image .card-body .site-links-container .github-link .github-info {
+  margin: 0;
+}
+.project-section .project-image .img-container {
+  max-width: 600px;
+  min-width: 50%;
+  overflow: hidden;
+}
+.project-section .project-image .img-container img {
+  transition: all 0.3s;
+}
+.project-section .project-image .img-container img:hover {
+  transform: scale(1.6);
+}
+
+.rev {
+  flex-wrap: wrap-reverse;
+}
+
+.reg {
+  flex-wrap: wrap;
+}
+
+#footer i.fab, #footer i.fas {
   color: #262626;
   padding: 10px 0;
 }
-#footer i.fab:hover {
+#footer i.fab:hover, #footer i.fas:hover {
   color: #F0A636;
 }
 
@@ -394,6 +464,11 @@ nav li a {
   .lead {
     max-width: 8ch;
     margin-bottom: 8px;
+  }
+}
+@media screen and (min-width: 1300px) {
+  .card-body {
+    margin-top: 36px;
   }
 }
 

@@ -8,13 +8,13 @@
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-        <link rel="stylesheet" type="text/css" href="style.css"/>
+        <link rel="stylesheet" type="text/css" href="main.css"/>
         <!-- font awesome script -->
         <script src="https://kit.fontawesome.com/46281f12c5.js" crossorigin="anonymous"></script>
     </head>
     <body>
-         <!-- nav bar -->
-         <nav class="navbar navbar-light" id="nav-banner">
+            <!-- nav bar -->
+            <nav class="navbar navbar-light" id="nav-banner">
 
                 <a class="navbar-brand" href="index.html">Nick.<em>Mowbray</em></a>
                 <button id="nav-button" type="button" >
@@ -39,10 +39,10 @@
         <!-- mobile nav links -->
                 <div class="nav-content">
                     <ul class="nav navbar-nav">
-                        <li class="nav-item">
+                        <li class="nav-item active">
                             <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
                         </li>
-                        <li class="nav-item active">
+                        <li class="nav-item">
                             <a class="nav-link" href="portfolio.html">Portfolio </a>
                         </li>
                         <li class="nav-item">
@@ -50,62 +50,82 @@
                         </li>
                     </ul>
             </div>
-        
-        <div class="scroll-snap-container">
-            
+        <!-- jummbotron -->
+        <main class="scroll-snap-container">
 
         <!-- portfolio cards -->
-        <section>
+        <br>
+        <br>
+        <br>
+        <section class="project-section">
 
-                <div class="project-image rev set-width">
-                    
-                    <div class="card-body"> 
-                        <h5 class="card-title">Moody Plants</h5>
-                        <p class="card-text">This is an e-commerce MERN application for selling some of my fine art photography prints. It uses predominantly React and material-ui in Typescript for the front end, and Node.js and mongoose/mongodb atlas for the backend.</p>   
-                        <p class="tags"><b>Tags: </b>Typescript, React.js, Express.js, Node.js, JavaScript, SASS, Material-UI, Cloudinary, Commerce.js, Stripe.js, Auth0, MongoDB</p>
-                        <div>
-                            <a href="https://moodyplants.com/" class="btn btn-primary site-link" target="_blank">Visit Site</a>
-                        </div>
+            <div class="project-image rev">
+                
+                <div class="card-body"> 
+                    <h3 class="card-title">Moody Plants</h5>
+                    <p class="card-text">This is an e-commerce MERN application for selling some of my fine art photography prints. It uses predominantly React and material-ui in Typescript for the front end, and Node.js and mongoose/mongodb atlas for the backend.</p>   
+                    <p class="tags"><b>Tags: </b>Typescript, React.js, Express.js, Node.js, JavaScript, Sass, Material-UI, Cloudinary, Commerce.js, Stripe.js, Auth0, MongoDB</p>
+                    <div class="site-links-container">
+                        <a href="https://moodyplants.com/" class="btn btn-primary site-link" target="_blank">Visit Site</a>
+                        <a class="a-link" href="https://github.com/nick75mowbray/moody_plants" target="_blank">
+                            <div class="github-link">
+                                <i class="fab fa-github fa-lg"></i>
+                                <p class="github-info">Checkout the project on GitHub</p>
+                            </div>
+                        </a>
                     </div>
-
-                        <div class="img-container">
-                            <img src="assets/images/moody_plants_mockup.jpg" class="card-img-top img-fluid" alt="Moody plants">
-                        </div>
-                        
                 </div>
 
-            </section>
-            <section>
+                    <div class="img-container">
+                        <img src="assets/images/moody_plants_mockup.jpg" class="card-img-top img-fluid" alt="Moody plants">
+                    </div>
+                    
+            </div>
+
+        </section>
+            <section class="project-section">
                 
-                <div class="project-image reg snap-child set-width">
+                <div class="project-image reg">
                     <div class="img-container">
                         <img src="assets/images/fasting_tracker.png" class="card-img-top img-fluid" alt="Fasting Tracker">
                     </div>
                         <div class="card-body">
                             <div>
-                            <h5 class="card-title">Fasting Tracker</h5>
+                            <h4 class="card-title">Fasting Tracker</h5>
                             <p class="card-text">As part of a collaboration I built an intermittent fasting tracker designed to help users to keep track of when to eat and when to fast. It also contains useful information and calculators including a BMI and calorie calculator as well as links to useful articles.</p>
-                            <p class="tags"><b>Tags: </b>html, css, javascript, api, jquery, moment.js, local storage, ajax</p>
+                            <p class="tags"><b>Tags: </b>HTML, CSS, JavaScript, API, JQuery, Moment.js, local storage, AJAX</p>
                             </div>
-                            <div>
+                            <div class="site-links-container">
                             <a href="https://nick75mowbray.github.io/fasting_tracker/" class="btn btn-primary site-link" target="_blank">Visit Site</a>
+                            <a class="a-link" href="https://github.com/nick75mowbray/fasting_tracker" target="_blank">
+                                <div class="github-link">
+                                    <i class="fab fa-github fa-lg"></i>
+                                    <p class="github-info">Checkout the project on GitHub</p>
+                                </div>
+                            </a>
                         </div>
                     </div>
                 </div>
 
             </section>
-            <section>
+            <section class="project-section">
 
-                <div class="project-image rev snap-child set-width">
+                <div class="project-image rev">
 
                     <div class="card-body">
                         <div>
-                            <h5 class="card-title">Weather Dashboard</h5>
+                            <h4 class="card-title">Weather Dashboard</h5>
                             <p class="card-text">A weather dashboard that uses openweather api to retrieve weather data. It features custom illustrations that change depending on the current weather conditions and uses local storage to save the users previous city searches.</p>
-                            <p class="tags"><b>Tags: </b>html, css, javascript, vector illustrations, api, jquery, ajax</p>
+                            <p class="tags"><b>Tags: </b>HTML, CSS, JavaScript, vector illustrations, API, JQuery, AJAX</p>
                         </div>
-                        <div>
+                        <div class="site-links-container">
                             <a href="https://nick75mowbray.github.io/weather_dashboard/" class="btn btn-primary site-link" target="_blank">Visit Site</a>
+                            <a class="a-link" href="https://github.com/nick75mowbray/weather_dashboard" target="_blank">
+                                <div class="github-link">
+                                    <i class="fab fa-github fa-lg"></i>
+                                    <p class="github-info">Checkout the project on GitHub</p>
+                                </div>
+                            </a>
                         </div>
                     </div>
 
@@ -116,9 +136,9 @@
                 </div>
 
             </section>
-            <section>
+            <section class="project-section">
 
-                <div class="project-image reg snap-child set-width">
+                <div class="project-image reg">
 
                     <div class="img-container">
                         <img src="assets/images/coffee_mockup.png" class="card-img-top img-fluid" alt="Day Planner">
@@ -126,92 +146,44 @@
 
                     <div class="card-body">
                         <div>
-                            <h5 class="card-title">Coffee Rater</h5>
-                            <p>This application allows users to upload, rate and review coffees. It uses sequelize to connect to a MySQL database and cloudinary to host images over the cloud.</p>
-                            <p class="tags"><b>Tags: </b>Html, css, javascript, sequelize, orm, cloudinary, node js, express js, handlebars</p>
+                            <h4 class="card-title">Coffee Rater</h5>
+                            <p class="card-text">This application allows users to upload, rate and review coffees. It uses sequelize to connect to a MySQL database and cloudinary to host images over the cloud.</p>
+                            <p class="tags"><b>Tags: </b>HTML, CSS, JavaScript, Sequelize, ORM, Cloudinary, Node.js, Express.js, handlebars</p>
                             </div>
-                            <div>
+                            <div class="site-links-container">
                             <a href="https://salty-forest-45628.herokuapp.com/" class="btn btn-primary site-link" target="_blank">Visit Site</a>
+                            <a class="a-link" href="https://github.com/nick75mowbray/Project2" target="_blank">
+                                <div class="github-link">
+                                    <i class="fab fa-github fa-lg"></i>
+                                    <p class="github-info">Checkout the project on GitHub</p>
+                                </div>
+                            </a>
                         </div>
                     </div>
 
                 </div>
 
             </section>
-            
+            <br>
         
         
-            <section>
-                <div class="contact-container">
-                    <div class="">
-                        <p><strong>Design</strong></p>
-                        <hr class="myhr">
-                        <ul class="list-unstyled">
-                            <li>Branding</li>
-                            <li>Illustration</li>
-                            <li>Photography</li>
-                            <li>UI/UX</li>
-                        </ul>
-                    </div>
             
-                    <div class="">
-                        <p><strong>Development</strong></p>
-                        <hr class="myhr">
-                        <ul class="list-unstyled">
-                            <li>HTML</li>
-                            <li>CSS</li>
-                            <li>JavaScript</li>
-                            <li>React</li>
-                            <li>JQuery</li>
-                            <li>NodeJS</li>
-                            <li>mySQL</li>
-                        </ul>
-                    </div>
-                    <div class="link-column">
-                        <p><strong>Contact</strong></p>
-                        <hr class="myhr">
-                    <div class="contact-link">
-                        <i class="fas fa-phone fa-lg"></i>
-                        <p class="contact-info">Ph. 0416 211 362</p>
-                    </div>
-                    
-                        <a href="mailto:nickmdeveloper@gmail.com" target="_blank">
-                            <div class="contact-link" >
-                                <i class="fas fa-envelope fa-lg"></i>
-                                <p class="contact-info">nickmdeveloper@gmail.com</p>
-                            </div>
-                        </a>
-                        <a href="https://www.linkedin.com/in/nicholas-mowbray-developer" target="_blank">
-                        <div class="contact-link">
-                            <i class="fab fa-linkedin fa-lg"></i>
-                            <p class="contact-info">LinkedIn</p>
-                        </div>
-                        </a>
-                        <a href="https://github.com/nick75mowbray" target="_blank">
-                        <div class="contact-link">
-                            <i class="fab fa-github fa-lg"></i>
-                            <p class="contact-info">GitHub</p>
-                        </div>
-                        </a>
-                    </div>
-                </div>
-        </section>
-    </div> <!--end scroll snap container-->
+        </main> <!--end scroll snap container-->
         <!-- footer -->
         <footer id="footer" class="footer fixed-bottom container-fluid">
                 <div class="row justify-content-center">
                     <div class="col-1 text-center">
-                        <a href="https://www.instagram.com/nick.mowbray/">
-                        <i class="fab fa-instagram fa-lg" title="Instagram"></i>
+                        <a href="mailto:nickmdeveloper@gmail.com" target="_blank">
+                        <i class="fas fa-envelope fa-lg" title="Email"></i>
                         </a>
                     </div>
                     <div class="col-1 text-center">
-                        <a href="https://github.com/nick75mowbray">
+                        <a href="https://github.com/nick75mowbray" target="_blank">
                         <i class="fab fa-github fa-lg" title="GitHub"></i>
                         </a>
                     </div>
                     <div class="col-1 text-center">
-                        <a href="https://www.linkedin.com/in/nicholas-mowbray-developer">
+                        <a href="https://www.linkedin.com/in/nicholas-mowbray-developer" target="_blank">
                         <i class="fab fa-linkedin fa-lg" title="LinkedIn"></i>
                         </a>
                     </div>
@@ -225,3 +197,4 @@
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>    
     </body>
     </html>
+
