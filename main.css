@@ -1,0 +1,507 @@
+.btn {
+  background-color: transparent;
+  border: 2px solid #F0A636;
+  color: #F0A636;
+  font-weight: 600;
+}
+.btn:hover {
+  background-color: #FFDAA4;
+  color: #fff;
+  border: 2px solid transparent;
+}
+.btn:focus {
+  background-color: #F0A636;
+  color: #fff;
+  border: 2px solid transparent;
+}
+
+body {
+  color: #262626;
+  font-family: "Open Sans", sans-serif;
+}
+
+h1, h2, h3, h4 {
+  font-family: "Poppins", sans-serif;
+}
+
+#hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 60px 10px 20px 10px;
+  min-height: 100vh;
+  overflow: hidden;
+}
+#hero #background-gradient {
+  background-image: linear-gradient(to bottom, #FFDAA4, rgba(255, 255, 255, 0));
+  position: absolute;
+  width: 30vw;
+  height: 100vh;
+  top: 0px;
+  left: 0px;
+  z-index: -5;
+}
+#hero #jumbotron-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: auto 0;
+  max-width: 100%;
+}
+#hero #jumbotron-container .myjumbotron {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 1200px;
+}
+#hero #jumbotron-container .myjumbotron #objects {
+  display: flex;
+  justify-content: center;
+  z-index: 3;
+  margin: 0;
+  width: 400px;
+  height: 100%;
+  overflow: visible;
+}
+#hero #jumbotron-container .myjumbotron #objects #screens {
+  width: 600px;
+  max-height: 300px;
+}
+#hero #jumbotron-container .myjumbotron .jumbotron-content {
+  width: 100%;
+  max-width: 70ch;
+  margin: 0 2vw;
+}
+#hero #jumbotron-container .myjumbotron .jumbotron-content #job-description {
+  margin-bottom: 30px;
+  font-weight: 600;
+}
+#hero #jumbotron-container .myjumbotron .jumbotron-content .lead {
+  font-family: "Oswald", sans-serif;
+  font-size: 3.5rem;
+  font-weight: 500;
+  color: #262626;
+  margin-bottom: 8px;
+  line-height: 1.1em;
+}
+#hero #jumbotron-container .myjumbotron .jumbotron-content .headline {
+  animation: fadeIn ease 3s;
+  -webkit-animation: fadeIn ease 3s;
+  -moz-animation: fadeIn ease 3s;
+  -o-animation: fadeIn ease 3s;
+  -ms-animation: fadeIn ease 3s;
+  margin-top: 0;
+  margin-bottom: 80px;
+  font-size: 1.2rem;
+  line-height: 1.8em;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-moz-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-o-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-ms-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+#hero #jumbotron-container .myjumbotron .jumbotron-content strong {
+  font-weight: 700;
+}
+
+/* nav-bar */
+.navbar-brand {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 1.5em;
+  color: #262626;
+}
+.navbar-brand em {
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 200;
+  font-style: normal;
+}
+.navbar-brand:hover, .navbar-brand :focus {
+  color: #F0A636;
+}
+
+.nav-item a {
+  margin: 0 2vw;
+  text-align: center;
+  color: #262626;
+}
+
+li.nav-item.active {
+  border-bottom: 1px solid #262626;
+  max-width: 200px;
+}
+
+li.nav-item:hover, li.nav-item :focus {
+  border-bottom: 2px solid #F0A636;
+}
+li.nav-item:hover a, li.nav-item :focus a {
+  color: #F0A636;
+}
+
+nav li a {
+  color: #262626;
+}
+
+#nav-banner {
+  background-color: transparent;
+  color: #262626;
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  width: 100vw;
+  padding: 1vw 4vw;
+  z-index: 5;
+  top: 0px;
+  transition: top 1s;
+}
+#nav-banner:hover {
+  background-color: #ffffffd2;
+}
+
+#navbarNav {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.show-links {
+  display: flex !important;
+  justify-content: center;
+}
+
+.nav-content {
+  top: 0px;
+  padding-top: 60px;
+  display: none;
+  position: fixed;
+  z-index: 4;
+  background-color: #ffffffd2;
+  width: 100%;
+}
+
+#nav-button {
+  display: none;
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+
+#nav-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+/* contact details */
+#details-section {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  margin-top: 80px;
+  background-color: #FFDAA4;
+}
+
+#contact-container {
+  max-width: 1000px;
+  width: 100%;
+  position: relative;
+  top: -100px;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 60px;
+  text-align: center;
+  flex-wrap: wrap;
+}
+#contact-container .myhr {
+  margin: 1.5em 0 0.8em 0;
+  border-bottom: 1px solid #F0A636;
+}
+
+.link-column {
+  border: 2px solid #F0A636;
+  background-color: #ffffff;
+  border-radius: 6px;
+  flex-grow: 1;
+  min-width: 250px;
+  max-width: 300px;
+  padding: 16px;
+  margin-bottom: 36px;
+}
+.link-column svg {
+  margin: 8px;
+}
+.link-column p strong {
+  font-size: larger;
+  color: #F0A636;
+  text-align: center;
+  margin: 0;
+}
+.link-column .list-unstyled {
+  line-height: 2em;
+}
+.link-column a {
+  color: #262626;
+  text-decoration: none;
+}
+.link-column a .contact-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 16px 0;
+}
+.link-column a .contact-link i {
+  color: #F0A636;
+}
+.link-column a .contact-link:hover {
+  color: #F0A636;
+  text-decoration: none;
+}
+.link-column a .contact-link .contact-info {
+  margin: 0;
+  margin-left: 8px;
+}
+
+.contact-page-links {
+  border: none;
+  padding: 8px 16px;
+}
+.contact-page-links .contact-link {
+  justify-content: start !important;
+}
+
+.contact-page {
+  max-width: 800px !important;
+  width: 100%;
+}
+.contact-page #contact-container {
+  width: 100%;
+}
+
+#headshot {
+  max-width: 300px;
+  width: 100%;
+  border-radius: 50%;
+  padding: 8px;
+}
+
+#hero #jumbotron-container .myjumbotron.headshot-container {
+  align-items: start !important;
+}
+
+#projects {
+  text-align: center;
+  color: #F0A636;
+  position: relative;
+  top: -25px;
+  font-weight: 600;
+}
+
+.project-section {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 16px;
+}
+.project-section .project-image {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.project-section .project-image .card-body {
+  max-width: 70ch;
+}
+.project-section .project-image .card-body .tags {
+  margin-top: 36px;
+}
+.project-section .project-image .card-body .site-links-container {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.project-section .project-image .card-body .site-links-container .site-link {
+  margin-bottom: 8px;
+}
+.project-section .project-image .card-body .site-links-container a {
+  text-decoration: none;
+}
+.project-section .project-image .card-body .site-links-container a:hover {
+  opacity: 0.3;
+}
+.project-section .project-image .card-body .site-links-container a:focus {
+  outline: 1px solid #F0A636;
+  outline-offset: 2px;
+}
+.project-section .project-image .card-body .site-links-container .github-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #F0A636;
+}
+.project-section .project-image .card-body .site-links-container .github-link i {
+  margin-left: 16px;
+  margin-right: 8px;
+}
+.project-section .project-image .card-body .site-links-container .github-link .github-info {
+  margin: 0;
+}
+.project-section .project-image .img-container {
+  max-width: 600px;
+  min-width: 50%;
+  overflow: hidden;
+}
+.project-section .project-image .img-container img {
+  transition: all 0.3s;
+}
+.project-section .project-image .img-container img:hover {
+  transform: scale(1.6);
+}
+
+.rev {
+  flex-wrap: wrap-reverse;
+}
+
+.reg {
+  flex-wrap: wrap;
+}
+
+#footer i.fab, #footer i.fas {
+  color: #262626;
+  padding: 10px 0;
+}
+#footer i.fab:hover, #footer i.fas:hover {
+  color: #F0A636;
+}
+
+.fade-in {
+  animation: fadeIn ease 8s;
+  -webkit-animation: fadeIn ease 8s;
+  -moz-animation: fadeIn ease 8s;
+  -o-animation: fadeIn ease 8s;
+  -ms-animation: fadeIn ease 8s;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-moz-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-o-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-ms-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@media screen and (max-width: 1070px) {
+  #job-description {
+    text-align: center;
+  }
+
+  #background-gradient {
+    width: 50vw !important;
+  }
+}
+@media screen and (max-width: 1000px) {
+  #nav-banner {
+    background-color: #ffffffd2;
+  }
+}
+@media screen and (max-width: 800px) {
+  .icon-label {
+    display: none;
+  }
+
+  #nav-button {
+    display: block;
+  }
+
+  #nav-content {
+    display: none;
+  }
+}
+@media screen and (max-width: 510px) {
+  #getInTouch-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .jumbotron-content .lead {
+    max-width: 8ch;
+    margin-bottom: 8px;
+    margin: auto;
+    text-align: center;
+  }
+}
+@media screen and (min-width: 1300px) {
+  .card-body {
+    margin-top: 36px;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

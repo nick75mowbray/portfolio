@@ -1,0 +1,18 @@
+@use '../helpers/colors' as *;
+
+.btn {
+    background-color: transparent;
+    border: 2px solid $darkGold;
+    color: $darkGold;
+    font-weight: 600;
+    &:hover {
+        background-color: $lightGold;
+        color: #fff;
+        border: 2px solid transparent;
+    } 
+    &:focus {
+        background-color: $darkGold;
+        color: #fff;
+        border: 2px solid transparent;
+    }
+}
