@@ -181,50 +181,81 @@ nav li a {
         margin: 1.5em 0 0.8em 0;
         border-bottom: 1px solid $darkGold;
     }
-    .link-column {
-        border: 2px solid $darkGold;
-        background-color: #ffffff;
-        border-radius: 6px;
-        flex-grow: 1;
-        min-width: 250px;
-        max-width: 300px;
-        padding: 16px;
-        margin-bottom: 36px;
-        svg {
-            margin: 8px;
-        }
-        p strong {
-            font-size: larger;
+}
+.link-column {
+border: 2px solid $darkGold;
+background-color: #ffffff;
+border-radius: 6px;
+flex-grow: 1;
+min-width: 250px;
+max-width: 300px;
+padding: 16px;
+margin-bottom: 36px;
+svg {
+    margin: 8px;
+}
+p strong {
+    font-size: larger;
+    color: $darkGold;
+    text-align: center;
+    margin: 0;
+}
+.list-unstyled {
+    line-height: 2em;
+}
+a {
+    color: $black;
+    text-decoration: none;
+    .contact-link {
+        @include center-vertical;
+        justify-content: center;
+        margin: 16px 0;
+        i {
             color: $darkGold;
-            text-align: center;
-            margin: 0;
         }
-        .list-unstyled {
-            line-height: 2em;
-        }
-        a {
-            color: $black;
+        &:hover {
+            color: $darkGold;
             text-decoration: none;
-            .contact-link {
-                @include center-vertical;
-                justify-content: center;
-                margin: 16px 0;
-                i {
-                    color: $darkGold;
-                }
-                &:hover {
-                    color: $darkGold;
-                    text-decoration: none;
-                }
-                .contact-info {
-                    margin: 0;
-                    margin-left: 8px;
-                }
-            }
         }
-        
+        .contact-info {
+            margin: 0;
+            margin-left: 8px;
+        }
     }
 }
+
+}
+// contact page
+.contact-page-links {
+    border: none;
+    padding: 8px 16px;
+    .contact-link {
+        justify-content: start !important;
+    }
+}
+.contact-page {
+    max-width: 800px !important;
+    width: 100%;
+    #contact-container {
+        width: 100%;
+    }
+}
+#headshot {
+    max-width: 300px;
+    width: 100%;
+    border-radius: 50%;
+    padding: 8px;
+}
+#hero {
+    #jumbotron-container {
+        .myjumbotron.headshot-container {
+            align-items: start !important;
+        }
+    }
+}
+
+
+
 
 
 // project cards
@@ -342,11 +373,17 @@ nav li a {
 }
 @media screen and (max-width: 510px){
     #getInTouch-container {
-        text-align: center;
+        @include center-horizontal;
+        flex-wrap: wrap;
     }
-    .lead {
-        max-width: 8ch;
-        margin-bottom: 8px;
+    .jumbotron-content {
+        
+        .lead {
+            max-width: 8ch;
+            margin-bottom: 8px;
+            margin: auto;
+            text-align: center;
+        }
     }
 }
 

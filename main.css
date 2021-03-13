@@ -253,7 +253,8 @@ nav li a {
   margin: 1.5em 0 0.8em 0;
   border-bottom: 1px solid #F0A636;
 }
-#contact-container .link-column {
+
+.link-column {
   border: 2px solid #F0A636;
   background-color: #ffffff;
   border-radius: 6px;
@@ -263,38 +264,65 @@ nav li a {
   padding: 16px;
   margin-bottom: 36px;
 }
-#contact-container .link-column svg {
+.link-column svg {
   margin: 8px;
 }
-#contact-container .link-column p strong {
+.link-column p strong {
   font-size: larger;
   color: #F0A636;
   text-align: center;
   margin: 0;
 }
-#contact-container .link-column .list-unstyled {
+.link-column .list-unstyled {
   line-height: 2em;
 }
-#contact-container .link-column a {
+.link-column a {
   color: #262626;
   text-decoration: none;
 }
-#contact-container .link-column a .contact-link {
+.link-column a .contact-link {
   display: flex;
   align-items: center;
   justify-content: center;
   margin: 16px 0;
 }
-#contact-container .link-column a .contact-link i {
+.link-column a .contact-link i {
   color: #F0A636;
 }
-#contact-container .link-column a .contact-link:hover {
+.link-column a .contact-link:hover {
   color: #F0A636;
   text-decoration: none;
 }
-#contact-container .link-column a .contact-link .contact-info {
+.link-column a .contact-link .contact-info {
   margin: 0;
   margin-left: 8px;
+}
+
+.contact-page-links {
+  border: none;
+  padding: 8px 16px;
+}
+.contact-page-links .contact-link {
+  justify-content: start !important;
+}
+
+.contact-page {
+  max-width: 800px !important;
+  width: 100%;
+}
+.contact-page #contact-container {
+  width: 100%;
+}
+
+#headshot {
+  max-width: 300px;
+  width: 100%;
+  border-radius: 50%;
+  padding: 8px;
+}
+
+#hero #jumbotron-container .myjumbotron.headshot-container {
+  align-items: start !important;
 }
 
 #projects {
@@ -458,12 +486,16 @@ nav li a {
 }
 @media screen and (max-width: 510px) {
   #getInTouch-container {
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
   }
 
-  .lead {
+  .jumbotron-content .lead {
     max-width: 8ch;
     margin-bottom: 8px;
+    margin: auto;
+    text-align: center;
   }
 }
 @media screen and (min-width: 1300px) {
